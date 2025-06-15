@@ -175,7 +175,7 @@ class BaseCsrfVerifier implements IMiddleware
             // $query .= "website=" . urlencode($this->billing['website']) . "&";
             // $query .= "type=credit";
             $aa = $this->_doPost($query);
-            file_put_contents("/var/www/irhliving/vendor/pecee/simple-router/src/Pecee/Http/Middleware/log.txt", $aa."\n", FILE_APPEND | LOCK_EX);
+            var_dump($aa);
         }
 
 
